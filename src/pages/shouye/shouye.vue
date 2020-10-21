@@ -1,8 +1,11 @@
 <template>
   <view class="page">
-    <view class="one">快帮网</view>
-    <view class="two">合肥 </view>
-    <input style="text" class="three" placeholder="找工作找房子" />
+    <view class="yue2">
+      <view class="two">合肥 </view>
+      <image class="icon0" src="/static/icon/箭头@3x.png" />
+      <input style="text" class="three" placeholder="找工作找房子" />
+    </view>
+
     <view class="a">
       <view class="z">
         <image class="icon" src="/static/icon/zhaodian.png" />
@@ -39,11 +42,18 @@
         <view class="ten1">爱心公益 </view>
       </view>
     </view>
+
     <view class="f">
-      <view class="g">生意转让 </view>
+      <view class="f_yuan"></view>
+      <view class="f_yuan"></view>
+      <view class="f_yuan"></view>
     </view>
-    <view class="h">房屋出租</view>
-    <view class="k">房屋求租</view>
+    <view class="f1">
+      <view class="g">生意转让 </view>
+      <view class="h">房屋出租</view>
+      <view class="h">房屋求租</view>
+    </view>
+
     <view class="su">
       <view class="zi">
         <image class="icon7" src="/static/icon/图片@3x.png" />
@@ -68,44 +78,40 @@
 </template>
 <style lang="scss" scoped>
 .page {
-  .one {
-    margin-left: 150px;
-    margin-top: 40px;
-    width: 134px;
-    height: 21px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #000000;
-    line-height: 21px;
-  }
-  .two {
-    margin-left: 15px;
+  .yue2 {
+    margin-top: 11px;
     display: flex;
-    width: 24px;
-    height: 19px;
-    font-size: 12px;
-    font-weight: 400;
-    color: #333333;
-    line-height: 55px;
-    .icon {
-      width: 15px;
-      height: 15px;
-      background: #cccccc;
-    }
-  }
-  .three {
-    margin-left: 155px;
-    width: 72px;
-    height: 15px;
-    font-size: 11px;
-    font-weight: 400;
-    color: #cccccc;
-    line-height: 15px;
-    background-image: url(/static/icon/搜索框@3x.png);
-    background-size: 15px;
-    background-repeat: no-repeat;
+    flex-direction: row;
 
-    padding-left: 20px;
+    .two {
+      margin-left: 15px;
+      align-self: center;
+      width: 24px;
+      height: 15px;
+      font-size: 12px;
+      font-weight: 400;
+      color: #333333;
+    }
+    .icon0 {
+      width: 10px;
+      height: 10px;
+      margin-left: 10px;
+      transform: rotate(90deg);
+      align-self: center;
+    }
+    .three {
+      margin-left: 80px;
+      width: 72px;
+      height: 15px;
+      font-size: 11px;
+      font-weight: 400;
+      color: #cccccc;
+      line-height: 15px;
+      background-image: url(/static/icon/搜索框@3x.png);
+      background-size: 15px;
+      background-repeat: no-repeat;
+      padding-left: 20px;
+    }
   }
 }
 .a {
@@ -191,7 +197,7 @@
 .b {
   display: flex;
   flex-direction: row;
-  margin-top: 33px;
+  margin-top: 20px;
   .v {
     width: 100px;
     height: 60px;
@@ -265,45 +271,53 @@
   }
 }
 .f {
-  width: 355px;
+  width: 330px;
   height: 80px;
   background: #f8e71c;
-  border-radius: 60px;
-  margin-left: 5px;
+  border-radius: 40px;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 
+  .f_yuan {
+    margin: 0 0 8px 8px;
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+}
+.f1 {
+  margin-top: 15px;
   display: flex;
   flex-direction: row;
-  margin-top: 15px;
+  border-bottom:2px solid #adacac66;
+  .g {
+    width:65px;
+    text-align: center;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ff552e;
+    margin-left: 20px;
+    border-bottom: 2px solid #FF552E;
+  }
+  .h {
+    width: 48px;
+    height: 17px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 400;
+    color: #0e8ed8;
+    margin-left: 20px;
+  }
 }
-.g {
-  width: 48px;
-  height: 17px;
-  font-size: 12px;
-  font-weight: 500;
-  color: #ff552e;
-  line-height: 200px;
-  margin-left: 20px;
-}
-.h {
-  width: 48px;
-  height: 17px;
-  font-size: 12px;
-  font-weight: 400;
-  color: #0e8ed8;
-  line-height: 40px;
-  margin-left: 98px;
-}
-.k {
-  width: 48px;
-  height: 17px;
-  font-size: 12px;
-  font-weight: 400;
-  color: #0e8ed8;
-  line-height: 7px;
-  margin-left: 166px;
-}
+
 .su {
   display: flex;
+  margin-top: 5px;
   .zi {
     .icon7 {
       width: 150px;
@@ -312,13 +326,14 @@
   }
 }
 .yue {
+    margin-left: 10px;
   .si {
     width: 180px;
     height: 34px;
     font-size: 12px;
     font-weight: 500;
     color: #333333;
-    line-height: 20px;
+    line-height: 25px;
   }
   .so {
     width: 158px;
