@@ -97,6 +97,8 @@
       }
     }
     .zi2 {
+      justify-content: space-around;
+      align-items: center;
       display: flex;
       width: 90%;
       height: 61px;
@@ -107,8 +109,7 @@
       margin-right: auto;
       .zi3 {
         display: flex;
-        margin-top: 20px;
-        padding-left: 45px;
+
         .icon1 {
           width: 24px;
           height: 14px;
@@ -123,8 +124,6 @@
       }
       .zi4 {
         display: flex;
-        margin-top: 20px;
-        padding-left: 85px;
         .icon2 {
           width: 24px;
           height: 24px;
