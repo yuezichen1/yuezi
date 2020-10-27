@@ -292,16 +292,16 @@
   margin-top: 15px;
   display: flex;
   flex-direction: row;
-  border-bottom:2px solid #adacac66;
+  border-bottom: 2px solid #adacac66;
   .g {
-    width:65px;
+    width: 65px;
     text-align: center;
     height: 30px;
     font-size: 12px;
     font-weight: 500;
     color: #ff552e;
     margin-left: 20px;
-    border-bottom: 2px solid #FF552E;
+    border-bottom: 2px solid #ff552e;
   }
   .h {
     width: 48px;
@@ -325,7 +325,7 @@
   }
 }
 .yue {
-    margin-left: 10px;
+  margin-left: 10px;
   .si {
     width: 180px;
     height: 34px;
